@@ -43,14 +43,17 @@ elif play_game == 'y' or play_game == 'Y':
 player_card = random.randint(1, 11)
 print('Your card is: ', player_card)
 # Loop for 21 begins.
-while player_card < 21:
+while player_card <= 21:
     player = input('Would you like another card? Y/N')
-    if player == 'y' or player == 'Y':
+    if player == 'n' or player == 'N':
+        print('Dealers Turn')
+        new_card = random.randint(1, 11)
+
+    elif player == 'y' or player == 'Y':
         new_card = random.randint(1, 11)
         print('Your new card is', new_card)
         player_card = int(player_card) + int(new_card)
-        print('You are at', player_card)
-    elif player == 'n' or player == 'N':
-        print('Dealers turn')
-        break
+        print('You have a', player_card)
+
+
 print('Your over 21 you BUST!')
