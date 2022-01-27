@@ -56,4 +56,5 @@ while player_card <= 21:
         player_card = int(player_card) + int(new_card)
         print('You have a', player_card)
     else:
+        # TODo find way to fix the never ending and never printing bust.
         print('Your over 21 you BUST!')
