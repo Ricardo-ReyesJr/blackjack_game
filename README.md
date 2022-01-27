@@ -1,2 +1,5 @@
 # blackjack_game
-text-based game of blackjack.
+
+This is a learning project.
+This is a text-based game. That I will be doing bit by bit.
+As I learn I have been adding and adding more and more.
